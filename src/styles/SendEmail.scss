@@ -4,13 +4,13 @@
 	display: grid;
 	place-items: center;
 }
-.form-container {
+.SendEmail-form-container {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	width: 300px;
 	justify-items: center;
 }
-.logo {
+.SendEmai-logo {
 	width: 150px;
 	margin-bottom: 48px;
 	justify-self: center;
@@ -68,7 +68,7 @@
 	margin-bottom: 30px;
 }
 @media (max-width: 640px) {
-	.logo {
+	.SendEmai-logo {
 		display: block;
 	}
 }
