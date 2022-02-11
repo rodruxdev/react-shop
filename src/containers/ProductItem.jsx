@@ -6,7 +6,7 @@ const ProductItem = ({ product }) => {
   return (
     <div className="ProductItem">
 			<img src={product.images[0]} alt={product.title} />
-			<ProductInfo price={product.price} productName={product.title} />
+			<ProductInfo product={product} />
 		</div>
   );
 };
