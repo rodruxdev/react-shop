@@ -2,7 +2,7 @@ import React from "react";
 import '@styles/ProductInfo.scss';
 import addCart from '@icons/bt_add_to_cart.svg';
 
-const ProductInfo = () => {
+const ProductInfo = ({ price, productName }) => {
   const [cart, setCart] = React.useState([]);
 
   const handleClick = () => {
@@ -12,8 +12,8 @@ const ProductInfo = () => {
   return (
     <div className="ProductInfo">
       <div>
-        <p>$120,00</p>
-        <p>Bike</p>
+        <p>{price}</p>
+        <p>{productName}</p>
       </div>
       <figure onClick={handleClick}>
         <img src={addCart} alt="" />
